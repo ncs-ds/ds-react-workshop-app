@@ -6,7 +6,7 @@ interface Beach {}
 
 const Beach: FC<BeachProps> = () => {
   return (
-    <div>
+    <div className="App">
       <img src="./beach.jpg" width={600}></img>
     </div>
   );

@@ -6,7 +6,7 @@ interface Mykonos {}
 
 const Mykonos: FC<MykonosProps> = () => {
   return (
-    <div>
+    <div className="App">
       <img src="./mykonos.jpg" width={600}></img>
     </div>
   );

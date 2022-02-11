@@ -1,20 +1,17 @@
-import React, { useState } from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import ButtonRouter from "./ButtonRouter";
-import Display from "./Display";
-import Beach from "./Beach";
-import Mykonos from "./Mykonos";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from "./Home";
 import { Button } from "@material-ui/core";
+import React, { useState } from "react";
+import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Beach from "./Beach";
+import Home from "./Home";
+import Mykonos from "./Mykonos";
 
 function App() {
   const [cost, setCost] = useState(0);
 
   return (
     <Router>
-      <div>
+      <div className="App">
         <nav>
           <Link to="/">
             <Button variant="outlined">Home</Button>
